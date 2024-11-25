@@ -57,7 +57,12 @@ nav ul li .cart-btn{
   transition:  background-color .3s ease-in-out ;
 }
 nav ul li .cart-btn:hover{
-  background-color: rgb(53, 86, 26)
+  background-color: rgb(56, 91, 28)
 
+}
+@media(max-width: 992px){
+  nav{
+    display: none;
+  }
 }
 
