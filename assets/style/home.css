@@ -17,6 +17,9 @@
 a{
   text-decoration: none;
 }
+img{
+  width: 100%;
+}
 .btn{
   background-color: var(--green);
   color: var(--white);
@@ -29,6 +32,11 @@ a{
 .hero {
   text-align: center;
   padding: 100px 0;
+}
+@media(max-width:992px){
+  .hero {
+    padding: 50px 0;
+  }
 }
 .hero .container h1{
   font-family: "Newsreader", serif;
@@ -48,4 +56,29 @@ a{
   font-weight: 600;
   font-size: 20px;
   line-height: 26px;
+}
+.category .container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 190px;
+}
+.category .item{
+  max-width: 50%;
+}
+.container figure{
+  max-width: 50%;
+}
+@media(max-width:992px){
+  .category .container{
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .category .item{
+    max-width: 100%;
+  }
+  .container figure{
+    max-width: 100%;
+  }
+
 }
