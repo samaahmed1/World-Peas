@@ -1,0 +1,183 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --green: #426b1f;
+  --gray: #6d6d6d;
+  --cream: #fafaf5;
+  --white: white;
+  --black: black;
+  --border-color:#E6E6E6;
+
+}
+.container{
+  margin: auto;
+  padding: 0 15px;
+}
+a{
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+img{
+  width: 100%;
+  display: block;
+}
+.btn{
+  background-color: var(--green);
+  color: var(--white);
+  border-radius: 8px;
+  transition:  background-color .3s ease-in-out ;
+}
+.btn:hover{
+  background-color: rgb(56, 91, 28)
+}
+.heading{
+  padding: 35px 20px 15px 20px;
+}
+.heading .container h1{
+  font-family: "Newsreader", serif;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 76.8px;
+  letter-spacing: -2%;
+  border-bottom: 2px solid var(--border-color);
+}
+.heading .container span{
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 26px;
+}
+.order{
+  padding: 10px 20px;
+}
+.order .container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.order .container .order-products{
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.order .container .order-products .product{
+  display: flex; 
+  border: 2px solid #E6E6E6;
+  border-radius: 24px;
+}
+.order .container .order-products .product .product-image{
+  width:fit-content;
+}
+.order .container .order-products .product img{
+  border-top-left-radius: 24px;
+  border-bottom-left-radius: 24px;
+}
+.order .container .order-products .product .product-description{
+ width: 85%;
+ background-color: var(--cream);
+ border-top-right-radius: 24px;
+ border-bottom-right-radius: 24px;
+ padding: 20px;
+}
+.order .container .order-products .product .product-description .details{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.order .container .order-products .product .product-description .details h2{
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+.order .container .order-products .product .product-description .details .total-price{
+  font-family: "Inter", sans-serif;
+  font-weight: 530;
+  font-size: 20px;
+}
+.order .container .order-products .product .product-description .price{
+  font-family: "Inter", sans-serif;
+  font-weight: 540;
+  font-size: 20px;
+  color: var(--green);
+  margin-bottom: 15px;
+}
+.order .container .order-products .product .product-description .number-of-pieces{
+  font-family: "Inter", sans-serif;
+  font-weight: 530;
+  font-size: 16px;
+  color: var(--black);
+  border: 2px solid #E6E6E6;
+  background-color: var(--white);
+  padding: 7px 35px;
+  border-radius: 20px;
+}
+.order .container .order-summary{
+  width: 33%;
+  background-color: var(--cream);
+  border-radius: 24px;
+  padding: 20px;
+  max-height: fit-content;
+  border: 2px solid #E6E6E6;
+}
+.order .container .order-summary h3{
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.order .container .order-summary li{
+  display: flex;
+  justify-content: space-between;
+}
+.order .container .order-summary span{
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.order .container .order-summary .payment{
+  display: block;
+  padding: 10px 20px;
+}
+@media(max-width:992px){
+  .order .container{
+   gap: 20px;
+  }
+  .order .container .order-products{
+    width: 100%;
+    
+  }
+  .order .container .order-summary{
+    width: 100%;
+  }
+}
+@media(max-width:520px){
+  .product{
+   flex-wrap: wrap;
+  }
+  .order .container .order-products .product .product-image{
+    width: 100%;
+    height: auto;
+  }
+  .order .container .order-products .product img{
+    border-top-left-radius: 24px;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 24px;
+
+  }
+  .order .container .order-products .product .product-description{
+   width: 100%;
+   border-top-right-radius: 0;
+   border-bottom-right-radius: 24px;
+   border-bottom-left-radius: 24px;
+  }
+}
+ 
+
