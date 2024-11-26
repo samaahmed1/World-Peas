@@ -1,0 +1,122 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --green: #426b1f;
+  --gray: #6d6d6d;
+  --cream: #fafaf5;
+  --white: white;
+  --black: black;
+  --border-color:#E6E6E6;
+
+}
+.container{
+  margin: auto;
+  padding: 0 15px;
+}
+a{
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+img{
+  width: 100%;
+  display: block;
+}
+.btn{
+  background-color: var(--green);
+  color: var(--white);
+  border-radius: 8px;
+  text-align: center;
+  transition:  background-color .3s ease-in-out ;
+}
+.btn:hover{
+  background-color: rgb(56, 91, 28)
+}
+.heading{
+  padding: 35px 20px 15px 20px;
+}
+.heading .container .page-heading{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid var(--border-color);
+  flex-wrap: wrap;
+}
+.heading .container h1{
+  font-family: "Newsreader", serif;
+  font-weight: 400;
+  font-size: 64px;
+  letter-spacing: -2%;
+}
+.heading .container span{
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 26px;
+}
+.heading .container .page-heading .controls{
+  display: flex;
+  gap: 15px;
+
+}
+.heading .container .page-heading .btn-custom{
+ padding: 7px 17px;
+ border-radius: 20px;
+ border: 2px solid #E6E6E6;
+ color: var(--black);
+ font-family: "Inter", sans-serif;
+ font-weight: 500;
+ font-size: 16px;
+}
+.heading .container .page-heading .btn{
+ padding: 7px 17px;
+ border-radius: 20px;
+ color: var(--white);
+ font-family: "Inter", sans-serif;
+ font-weight: 500;
+ font-size: 16px;
+}
+.order{
+  padding: 10px 20px;
+}
+.order .container .order-products{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.order .container .order-products .product{
+  border: 2px solid #E6E6E6;
+  border-radius: 24px;
+  width: 350px;
+}
+@media(max-width:820px){
+  .order .container .order-products .product{
+    width: 100%;
+  }
+}
+.order .container .order-products .product img{
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+}
+.order .container .order-products .product .product-description{
+ background-color: var(--cream);
+ border-bottom-right-radius: 24px;
+ border-bottom-left-radius: 24px;
+ padding: 20px;
+}
+.order .container .order-products .product .product-description h2{
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.order .container .order-products .product .product-description .price{
+  font-family: "Inter", sans-serif;
+  font-weight: 540;
+  font-size: 20px;
+  color: var(--green);
+}
